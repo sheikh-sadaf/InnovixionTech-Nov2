@@ -1,0 +1,52 @@
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #3498db, #2c3e50);
+    color: #fff;
+    animation: gradientAnimation 10s infinite alternate;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  #countdown {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    margin: 10px;
+    animation: countdownAnimation 1s ease-in-out infinite alternate;
+  }
+  #countdown p{
+    font-size: 2.5rem;
+  }
+
+  @keyframes countdownAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  #countdown p {
+    display: inline-block;
+  }
+
+  #eventInput {
+    margin: 20px;
+    font-size: 1em;
+    padding: 5px;
+    text-align: center;
+  }
